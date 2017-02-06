@@ -1,0 +1,9 @@
+<%
+const filters = ['title', 'date', 'updated', 'comments', 'excerpt', 'source', 'path', 'permalink', 'link', 'published', 'categories', 'tags']
+const datas = JSON.stringify(site.posts.map(post => {
+  const data = {}
+  for (let filter of filters) data[filter] = post[filter]
+  return data
+}))
+-%>
+<%- datas %>
