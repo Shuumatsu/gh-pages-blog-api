@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Migrate to hexo
 categories: [hellooo, www]
 tags: [qqq, eee] 
 ---
