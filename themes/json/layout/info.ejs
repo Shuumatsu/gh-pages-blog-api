@@ -1,0 +1,37 @@
+<%
+const data = {}
+
+const raw = site.categories.data
+const cache = {}
+
+const getFromRaw = key => {
+  if (cache[key]) return cache[key]
+
+  let data = []
+  const name = raw[key].name
+  data.push(name)
+
+  const parent = raw[key].parent
+
+  if (parent) {
+    data = getFromRaw(parent).concat(data)
+  }
+  cache[key] = data
+
+  return data
+}
+
+const categoriesData = []
+for (let key in raw) {
+  categoriesData.push(getFromRaw(key))
+}
+data.categories = categoriesData
+
+const tagsData = []
+
+for (let key in site.tags.data)
+  tagsData.push(site.tags.data[key].name)
+
+data.tags = tagsData
+-%>
+<%- JSON.stringify(data) %>

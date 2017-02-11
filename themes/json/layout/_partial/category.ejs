@@ -1,0 +1,14 @@
+<%
+let filters = ['base', 'posts']
+const data = {}
+for (let filter of filters) data[filter] = page[filter]
+filters = ['title', 'date', 'updated', 'comments', 'excerpt', 'source', 'path', 'permalink', 'link', 'published', 'categories', 'tags']
+data.posts = data.posts.data.map(document => {
+  const data = {}
+  for(let filter of filters) data[filter] = document[filter]
+  data.tags = data.tags.data.map(document => document.name)
+  data.categories = data.categories.data.map(document => document.name)
+  return data
+})
+-%>
+<%- JSON.stringify(data) %>

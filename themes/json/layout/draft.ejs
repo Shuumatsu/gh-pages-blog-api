@@ -1,6 +1,1 @@
-<%
-const filters = ['content', 'raw', 'photos', 'title', 'date', 'updated', 'comments', 'excerpt', 'source', 'path', 'permalink', 'link', 'published', 'categories', 'tags']
-const data = {}
-for (let filter of filters) data[filter] = page[filter]
--%>
-<%- JSON.stringify(data) %>
+<%- partial('_partial/page') %>
