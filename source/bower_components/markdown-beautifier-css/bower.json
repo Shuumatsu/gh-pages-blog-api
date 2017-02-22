@@ -1,0 +1,21 @@
+{
+  "name": "markdown-beautifier-css",
+  "description": "stylesheets to make generated markdown, or raw HTML, look beautiful",
+  "main": "markdown.css",
+  "authors": [
+    "vanis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "markdown"
+  ],
+  "homepage": "https://github.com/VanishingDante/MarkdownCSS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

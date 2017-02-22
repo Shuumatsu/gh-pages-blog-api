@@ -6,7 +6,7 @@ layout: standalone
 
 #### University of Electronic Science and Technology of China
 
-2013.9 ~ 
+2013.9 - 2017.6
 
 Information and Computing Science
 
