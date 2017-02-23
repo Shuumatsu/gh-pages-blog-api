@@ -2,6 +2,19 @@
 layout: standalone
 ---
 
+## About me 
+
+Hello, I'm Kerui Huang, a senior student at University of Electronic Science and Technology. My major is Information and Computing Sciences.
+
+Coding is interesting. 
+
+I believe in hard work and sharing what I know. Interested in working with me? You can get in touch with me by email or phone. I’m looking forward to hearing from you.
+
+### Contact
+
+VanishingDante@gmail.com
++86 18581965583
+
 ### Education
 
 #### University of Electronic Science and Technology of China
@@ -44,3 +57,24 @@ project site: [https://github.com/VanishingDante/koa-pushstate-middleware](https
 #### clone-react-template
 
 project site: [https://github.com/VanishingDante/clone-react-template](https://github.com/VanishingDante/clone-react-template)
+
+#### Expertise & Core Skills
+
+- Development
+  - Idiomatic Javascript and Nodejs
+  - Front end Javascript framework: React(React Native), Polymer
+  - Nodejs framework: Koa2
+  - Responsive Development
+  - CSS3, HTML5
+- Tooling / Workflow
+  - git
+  - Gulp
+  - npm/yarn: Extensive Configuration as a task runner
+  - webpack: Extensive Configuration for both dev and prod env
+
+#### What I'm recently doing
+
+- Learning Haskell and configuring my vim for it
+- Learning test with Jest
+- Reading Koa's source code
+- Completing my blog
