@@ -1,11 +1,14 @@
 ---
 layout: post
 title: redux 笔记
+categories: [JavaScript, redux]
+tags: [JavaScript, React, redux]
+date: 2016/11/13 20:46:25
 ---
 
-# redux 源码笔记
-
 state 的改变必须经过 `store.dispatch` 方法，`dispatch` 方法会返回接收的 `action`。
+
+<!-- more -->
 
 ## reducer
 
