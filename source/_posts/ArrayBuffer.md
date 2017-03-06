@@ -89,14 +89,15 @@ console.log(dataView.getInt32(0), int32Array[0])
 DataView 的读写方法默认是以大端序（可通过方法的最后一个参数控制），而接下来要提到的 TypedArray 是以小端序进行读写（至少在 chrome 56 上是这样）。16777216 写成32位的二进制为 00000001 00000000 00000000 00000000，即 00000000 0000000 00000000 00000001 的小端序写法。
 
 因此提供一种检验本机字节序的方法：
+
 ```
 const littleEndian = () => {
   const buffer = new ArrayBuffer(8)
   const dataView = new DataView(buffer)
   const int32Buffer = new Int32Array(buffer)
     
-  dataView.set(0, 1, true)
-  return dataView.get(0, true) === int32Buffer[0]
+  dataView.setInt32(0, 1, true)
+  return dataView.getInt32(0, true) === int32Buffer[0]
 }
 ```
 

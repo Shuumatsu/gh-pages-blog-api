@@ -38,7 +38,7 @@ Regular expression to match a line that doesn't contain a word?
 
 - （“选择”）R|S指示R和S的并集。例如：{"ab", "c"}|{"ab", "d", "ef"}= {"ab", "c", "d", "ef"}。
 
-- （“Kleene星号”）R* 指示包含ε并且闭合在字符串串接下的R的最小超集。这是可以通过R中的零或多个字符串的串接得到所有字符串的集合。例如，{"ab", "c"}* = {ε, "ab", "c", "abab", "abc", "cab", "cc", "ababab", ... }。
+- （“Kleene星号”）R\* 指示包含ε并且闭合在字符串串接下的R的最小超集。这是可以通过R中的零或多个字符串的串接得到所有字符串的集合。例如，{"ab", "c"}\* = {ε, "ab", "c", "abab", "abc", "cab", "cc", "ababab", ... }。
 
 上述常量和算子形成了克莱尼代数。
 
